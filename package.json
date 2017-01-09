@@ -18,7 +18,7 @@
     "version": "",
     "postversion": "git push && git push --tags",
     "prepublish": "gulp default",
-    "postinstall": "gulp default",
+    "postinstall": "../.bin/gulp default",
     "coveralls": "gulp test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
