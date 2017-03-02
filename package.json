@@ -1,16 +1,19 @@
 {
-  "name": "gulp-jsdoc3",
-  "version": "0.2.1",
+  "name": "@sugarcrm/gulp-jsdoc3",
+  "version": "0.2.4",
   "description": "gulp integration for jsdoc3 cli",
   "main": "index.js",
+  "files": [
+    "dist",
+    "docs",
+    "index.js",
+    "src"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mlucool/gulp-jsdoc3.git"
+    "url": "git+https://github.com/sugarcrm/gulp-jsdoc3.git"
   },
-  "bugs": {
-    "url": "https://github.com/mlucool/gulp-jsdoc3/issues"
-  },
-  "homepage": "https://github.com/mlucool/gulp-jsdoc3#readme",
+  "homepage": "https://github.com/sugarcrm/gulp-jsdoc3",
   "scripts": {
     "lint": "gulp lint",
     "test": "gulp test",
@@ -18,7 +21,6 @@
     "version": "",
     "postversion": "git push && git push --tags",
     "prepublish": "gulp default",
-    "postinstall": "../.bin/gulp default",
     "coveralls": "gulp test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
@@ -29,10 +31,7 @@
     "gulpplugin",
     "documentation"
   ],
-  "author": {
-    "name": "Marc Udoff",
-    "email": "marc.opensource@gmail.com"
-  },
+  "author": "Marc Udoff <marc.opensource@gmail.com>",
   "pre-commit": [
     "lint",
     "test"
@@ -45,12 +44,7 @@
     "ink-docstrap": "^1.1.4",
     "jsdoc": "^3.4.0",
     "map-stream": "0.0.6",
-    "tmp": "0.0.28",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-babel": "^6.1.1",
-    "gulp-eslint": "^1.1.1",
-    "gulp-istanbul": "^0.10.3",
-    "gulp-mocha": "^2.2.0"
+    "tmp": "0.0.28"
   },
   "devDependencies": {
     "babel-cli": "^6.3.15",
@@ -62,10 +56,22 @@
     "eslint": "^1.10.3",
     "eslint-plugin-babel": "^3.0.0",
     "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
     "mock-spawn": "^0.2.6",
     "pre-commit": "^1.1.2",
     "run-sequence": "^1.1.5"
+  },
+  "bugs": {
+    "url": "https://github.com/sugarcrm/gulp-jsdoc3/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   }
 }
